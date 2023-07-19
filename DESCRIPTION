@@ -1,0 +1,21 @@
+Package: PPtreeCluster
+Type: Package
+Title: Cluster Analysis with Projection Pursuit Tree Structure
+Version: 2.1.0
+Date: 2023-07-12
+Authors@R: 
+    c(person(given = "Eun-Kyung",
+           family = "Lee",
+           role = c("aut","cre"),
+           email = "lee.eunk@gmail.com"),
+    person(given = "Jihye",
+           family = "Ye",
+           role = c("aut")))   
+Maintainer: Eun-Kyung Lee <lee.eunk@gmail.com>
+Description: Cluster analysis using projection pursuit and tree structure. In each node of the tree, the projection pursuit method is used to find the one-dimensional projection with a hole in the middle and finds two clusters. Each cluster is continuously separated into two clusters until it is declared a final node.
+License: GPL (>= 2)
+Depends:  R (>= 3.5.0)
+Imports: Rcpp (>= 1.0.9),grid, PPCI,ggplot2,gridExtra,optimx,quantreg,PRIMME,PPtreeViz
+LinkingTo: Rcpp, RcppArmadillo
+Encoding: UTF-8
+RoxygenNote: 7.2.3
